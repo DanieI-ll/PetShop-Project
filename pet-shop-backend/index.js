@@ -17,7 +17,11 @@ Category.hasMany(Product);
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: 'https://petshop-backend-33od.onrender.com',
+  }),
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
