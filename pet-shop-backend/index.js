@@ -17,20 +17,16 @@ Category.hasMany(Product);
 const app = express();
 
 // Middleware
-app.use(
-  cors({
-    origin: 'https://pet-shop-project-91l3a44t8-daniels-projects-889c52e0.vercel.app',
-  }),
-);
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Routes
-app.use('/api/categories', categories);
-app.use('/api/products', products);
-app.use('/api/sale', sale);
-app.use('/api/order', order);
+app.use('/categories', categories);
+app.use('/products', products);
+app.use('/sale', sale);
+app.use('/order', order);
 
 app.get('/', (req, res) => {
   res.send('API is running');
