@@ -27,10 +27,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Routes
-app.use('/categories', categories);
-app.use('/products', products);
-app.use('/sale', sale);
-app.use('/order', order);
+app.use('/api/categories', categories);
+app.use('/api/products', products);
+app.use('/api/sale', sale);
+app.use('/api/order', order);
 
 app.get('/', (req, res) => {
   res.send('API is running');
