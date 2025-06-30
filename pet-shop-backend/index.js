@@ -19,7 +19,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: 'https://petshop-backend-33od.onrender.com',
+    origin: 'https://pet-shop-project-91l3a44t8-daniels-projects-889c52e0.vercel.app',
   }),
 );
 app.use(express.json());
