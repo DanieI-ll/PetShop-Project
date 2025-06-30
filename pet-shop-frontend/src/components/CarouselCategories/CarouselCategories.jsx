@@ -60,7 +60,7 @@ export default function CarouselCategories() {
             <SwiperSlide key={category.id}>
               <Link to={`/categories/${category.id}`}>
                 <div className={styles.categoryContent}>
-                  <img src={'https://petshop-backend-33od.onrender.com' + category.image} className={styles.category_img} alt={category.title} />
+                  <img src={'https://petshop-backend-33od.onrender.com' + "/" + category.image} className={styles.category_img} alt={category.title} />
                   <p className={styles.category_title}>{category.title}</p>
                 </div>
               </Link>
