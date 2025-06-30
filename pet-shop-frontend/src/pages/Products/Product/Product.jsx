@@ -22,6 +22,7 @@ export default function Product({ product }) {
 
   const discountPercentage = product.discont_price ? Math.ceil(((product.price - product.discont_price) / product.price) * 100) : null;
 
+  console.log(product.image);
   return (
     <div className={styles.product_box} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       {isHovered && <AppButton className={styles.add_to_cart_button} text={isBtnActive ? 'Added' : 'Add to cart'} isActive={isBtnActive} handleClick={handleAddToCart} />}
