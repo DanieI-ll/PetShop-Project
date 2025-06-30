@@ -39,7 +39,7 @@ export default function CategoriesPage() {
         {categories.map((category) => (
           <Link key={category.id} to={`/categories/${category.id}`}>
             <div className={styles.categories_item_box}>
-              <img src={'https://petshop-backend-33od.onrender.com' + category.image} alt={category.title} className={styles.categories_item} />
+              <img src={'https://petshop-backend-33od.onrender.com' + "/" + category.image} alt={category.title} className={styles.categories_item} />
               <p className={styles.categories_item_title}>{category.title}</p>
             </div>
           </Link>

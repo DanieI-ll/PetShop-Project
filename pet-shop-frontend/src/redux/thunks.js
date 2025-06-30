@@ -4,7 +4,7 @@ import axios from 'axios';
 //Получение всех категорий товаров
 export const getAllCategories = createAsyncThunk('data/getAllCategories', async () => {
   try {
-    const response = await axios.get('https://petshop-backend-33od.onrender.comcategories/all');
+    const response = await axios.get('https://petshop-backend-33od.onrender.com/categories/all');
     return response.data;
   } catch (error) {
     console.error('There was an error fetching the categories!', error);
@@ -15,7 +15,7 @@ export const getAllCategories = createAsyncThunk('data/getAllCategories', async 
 // Получение продуктов по категории
 export const getProductsByCategory = createAsyncThunk('data/getProductsByCategory', async (categoryId) => {
   try {
-    const response = await axios.get(`https://petshop-backend-33od.onrender.comcategories/${categoryId}`);
+    const response = await axios.get(`https://petshop-backend-33od.onrender.com/categories/${categoryId}`);
     return response.data;
   } catch (error) {
     console.error('There was an error fetching the products!', error);
@@ -31,7 +31,7 @@ export const getAllProducts = createAsyncThunk('data/getAllProducts', async () =
       return existingProducts; // Не загружаем заново, если товар уже в state
     }  */
   try {
-    const response = await axios.get('https://petshop-backend-33od.onrender.comproducts/all');
+    const response = await axios.get('https://petshop-backend-33od.onrender.com/products/all');
     return response.data;
   } catch (error) {
     console.error('There was an error fetching the products!', error);
@@ -41,7 +41,7 @@ export const getAllProducts = createAsyncThunk('data/getAllProducts', async () =
 
 export const getProductById = createAsyncThunk('products/getProductById', async (productId, { rejectWithValue }) => {
   try {
-    const response = await axios.get(`https://petshop-backend-33od.onrender.comproducts/${productId}`);
+    const response = await axios.get(`https://petshop-backend-33od.onrender.com/products/${productId}`);
     return response.data;
   } catch (error) {
     if (error.response && error.response.status === 404) {
@@ -54,7 +54,7 @@ export const getProductById = createAsyncThunk('products/getProductById', async 
 // Оформление заказа
 export const sendOrder = createAsyncThunk('data/sendOrder', async (orderData, { rejectWithValue }) => {
   try {
-    const response = await axios.post('https://petshop-backend-33od.onrender.comorder/send', orderData);
+    const response = await axios.post('https://petshop-backend-33od.onrender.com/order/send', orderData);
     console.log('Order successfully placed!', response.data);
     return response.data;
   } catch (error) {
