@@ -113,7 +113,7 @@ export default function ProductDetailsPage() {
       <div className={styles.ProductDetailsPageBox}>
         <div className={styles.ProductDetailsPageBox_item}>
           <div className={styles.ProductDetailsPageBox_itemImg_right}>
-            <img src={`http://localhost:3333${image}`} alt={title} />
+            <img src={`https://petshop-backend-33od.onrender.com/${image}`} alt={title} />
           </div>
 
           <div className={styles.ProductDetailsPageBox_itemInfo}>
