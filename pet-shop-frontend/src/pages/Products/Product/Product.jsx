@@ -27,7 +27,7 @@ export default function Product({ product }) {
       {isHovered && <AppButton className={styles.add_to_cart_button} text={isBtnActive ? 'Added' : 'Add to cart'} isActive={isBtnActive} handleClick={handleAddToCart} />}
       <Link to={`/products/${product.id}`} className={styles.product_link}>
         <div className={styles.product_img_box}>
-          <img src={`http://localhost:3333/${product.image}`} className={styles.product_img} alt={product.title} />
+          <img src={`https://petshop-backend-33od.onrender.com${product.image}`} className={styles.product_img} alt={product.title} />
           {product.discont_price && (
             <div className={styles.discount_icon}>
               <p className={styles.discount}>-{discountPercentage}%</p>

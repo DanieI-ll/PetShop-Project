@@ -1,12 +1,12 @@
-import React from 'react'
-import styles from './CategoriesPage.module.css'
+import React from 'react';
+import styles from './CategoriesPage.module.css';
 
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
-import Breadcrumbs from "../../components/BreadCrumbs/BreadCrumbs.jsx";
+import Breadcrumbs from '../../components/BreadCrumbs/BreadCrumbs.jsx';
 
-import { getAllCategories } from "../../redux/thunks";
+import { getAllCategories } from '../../redux/thunks';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 
@@ -25,10 +25,11 @@ export default function CategoriesPage() {
 
   return (
     <div className={styles.categories}>
-      <Breadcrumbs className={styles.categories_breadcrumbs}
+      <Breadcrumbs
+        className={styles.categories_breadcrumbs}
         items={[
-          { path: "/", label: "Main page" },
-          { path: "/categories", label: "Categories", isActive: true },
+          { path: '/', label: 'Main page' },
+          { path: '/categories', label: 'Categories', isActive: true },
         ]}
       />
 
@@ -38,11 +39,7 @@ export default function CategoriesPage() {
         {categories.map((category) => (
           <Link key={category.id} to={`/categories/${category.id}`}>
             <div className={styles.categories_item_box}>
-              <img
-                src={"http://localhost:3333/" + category.image}
-                alt={category.title}
-                className={styles.categories_item}
-              />
+              <img src={'https://petshop-backend-33od.onrender.com' + category.image} alt={category.title} className={styles.categories_item} />
               <p className={styles.categories_item_title}>{category.title}</p>
             </div>
           </Link>

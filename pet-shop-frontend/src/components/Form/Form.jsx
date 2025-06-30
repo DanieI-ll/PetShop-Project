@@ -17,7 +17,7 @@ export default function Form() {
   const onSubmit = async (data) => {
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:3333/sale/send', data, {
+      const response = await axios.post('https://petshop-backend-33od.onrender.comsale/send', data, {
         headers: {
           'Content-Type': 'application/json',
         },

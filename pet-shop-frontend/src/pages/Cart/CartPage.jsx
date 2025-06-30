@@ -65,7 +65,7 @@ export default function CartPage() {
             {cartItems.map((item) => (
               <div className={styles.CartPage_item} key={item.id}>
                 <div className={styles.CartPage_itemImg}>
-                  <img src={`http://localhost:3333/${item.image}`} alt={item.title} />
+                  <img src={`https://petshop-backend-33od.onrender.com${item.image}`} alt={item.title} />
                 </div>
                 <div className={styles.CartPage_itemInfo}>
                   <div className={styles.CartPage_itemInfo_left}>
