@@ -45,11 +45,11 @@ footer {
 }
 
 .info_box:nth-child(odd) {
-  width: 780px;
+  width: 100%;
 }
 
 .info_box:nth-child(even) {
-  width: 548px;
+  width: 100%;
 }
 
 .info_box:last-child {
@@ -91,4 +91,20 @@ footer {
   height: 350px;
   border: 0;
   border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .info_content {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .info_box_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .info_content {
+    font-size: 20px;
+  }
 }

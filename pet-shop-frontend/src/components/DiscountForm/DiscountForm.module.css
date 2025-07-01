@@ -37,3 +37,15 @@
   outline-color: #ffffff;
   width: 100%;
 }
+
+@media (max-width: 1400px) {
+  .form_img {
+    display: none;
+  }
+
+  .form_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

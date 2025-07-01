@@ -89,7 +89,13 @@ header {
 }
 
 @media (max-width: 800px) {
-  .nav_list a {
-    display: none !important;
+  .nav_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav_list a{
+    font-size: 15px;
   }
 }

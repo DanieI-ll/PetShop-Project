@@ -75,6 +75,22 @@
   margin-top: 80px;
 }
 
+.categories_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.sales_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
 .categories_bnt,
 .sales_bnt {
   background-color: transparent;
@@ -100,4 +116,44 @@
 .sales_bnt:hover {
   background-color: #282828;
   color: #ffffff;
+}
+
+.categories_line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.sales_bnt{
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .categories_line {
+    display: none;
+  }
+
+  .categories_div {
+    width: 300px;
+  }
+
+  .sales_div {
+    width: 150px;
+  }
+
+  .categories_bnt{
+    display: none;
+  }
+
+  .categories_main_title,
+  .sales_main_title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
