@@ -15,7 +15,6 @@ To deliver a full-featured, responsive web app with multiple pages and interacti
 * Product filtering
 * Shopping cart functionality
 * Handling of 404 Not Found pages
-* Responsive design
 * Backend API integration
 
 ## Technologies Used
@@ -55,7 +54,6 @@ Bereitstellung einer voll funktionsfähigen, responsiven Webanwendung mit mehrer
 * Produktfilterung
 * Warenkorbfunktionalität
 * Umgang mit 404-Fehlerseiten
-* Responsives Design
 * Integration mit Backend-API
 
 ## Verwendete Technologien
