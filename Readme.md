@@ -8,7 +8,7 @@ This is a modern online pet store web application designed to provide users with
 
 ## Project Goal
 
-To deliver a full-featured, responsive web app with multiple pages and interactive elements, connected seamlessly to a backend API.
+To deliver a full-featured web app with multiple pages and interactive elements, connected seamlessly to a backend API.
 
 ## Features
 
