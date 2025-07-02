@@ -10,6 +10,11 @@ This is a modern online pet store web application designed to provide users with
 
 To deliver a full-featured web app with multiple pages and interactive elements, connected seamlessly to a backend API.
 
+## Live Demo
+
+Note: The backend may take a few seconds to wake up on the first request, as it's hosted on a free service. Please be patient if the page takes a moment to load.
+https://pet-shop-project-opal.vercel.app
+
 ## Features
 
 * Product filtering
@@ -47,7 +52,12 @@ Dies ist eine moderne Webanwendung für einen Online-Shop für Haustierprodukte,
 
 ## Projektziel
 
-Bereitstellung einer voll funktionsfähigen, responsiven Webanwendung mit mehreren Seiten und interaktiven Elementen, die nahtlos mit einer Backend-API verbunden ist.
+Bereitstellung einer voll funktionsfähigen Webanwendung mit mehreren Seiten und interaktiven Elementen, die nahtlos mit einer Backend-API verbunden ist.
+
+## Live Demo
+
+Hinweis: Das Backend benötigt bei der ersten Anfrage eventuell ein paar Sekunden zum Starten, da es auf einem kostenlosen Dienst gehostet wird. Bitte habe etwas Geduld, falls die Seite kurz zum Laden braucht.
+https://pet-shop-project-opal.vercel.app
 
 ## Funktionen
 
